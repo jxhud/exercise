@@ -18,7 +18,7 @@ Web端UI系统、微信公众号、微信小程序、Android手机端，在本�
 
 # 4      场景描述
 
-![img](file:///C:/Users/Warren/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![img](image/clip_image002.png)
 
  
 
@@ -28,9 +28,9 @@ Web端UI系统、微信公众号、微信小程序、Android手机端，在本�
 
 使用MS SqlServer数据库。版本：2008 R2或以上。
 
-![img](file:///C:/Users/Warren/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+![img](image/clip_image004.png)
 
-![img](file:///C:/Users/Warren/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)
+![img](image/clip_image006.png)
 
 这2个表手工填写一些测试数据即可。
 
@@ -124,7 +124,7 @@ GET /user
 
 ## 6.1     AdminLTE模板
 
-![img](file:///C:/Users/Warren/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+![img](image/clip_image008.jpg)
 
 <https://adminlte.io/>
 
