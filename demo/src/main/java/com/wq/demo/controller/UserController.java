@@ -78,7 +78,7 @@ public class UserController {
         int id = userService.selectId(userMessage.getUsername(), userMessage.getPassword());
         if(id == 0) {
             redirect_uri = uri;
-            return "redirect:http://localhost:8888";
+            return "redirect:http://localhost:8080";
         }
         else {
             return "redirect:"+redirect_uri+"?code="+id;
