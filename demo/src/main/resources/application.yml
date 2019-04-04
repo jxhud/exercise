@@ -1,20 +1,18 @@
 spring:
-  security:
-    user:
-      name: root
-      password: root
-      roles: ADMIN
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     url: jdbc:sqlserver://localhost:1433;databaseName=dbo
     username: sa
     password: 123456
-server:
-  port: 8080
-security:
-  oauth2:
-    client:
-      client-id: root
-      client-secret: root
-      scope: username
-      registered-redirect-uri: http://www.baidu.com
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 500

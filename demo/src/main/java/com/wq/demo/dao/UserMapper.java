@@ -1,20 +1,17 @@
 package com.wq.demo.dao;
 
-import com.wq.demo.entity.User;
 import com.wq.demo.entity.UserInfo;
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface UserMapper {
-    @Select("select id,username from master_user where id=#{id}")
+    @Select("select id,display_name from master_user where id=#{id}")
     public UserInfo selectUserInfo(int id);
 
-    @Insert("insert into master_user values(#{id},#{username},#{password},#{display_name})")
-    public void insertUser(User user);
+    @Select("select ISNULL(max(id),0) from master_client where client_open_id=#{client_open_id} and client_secret=#{client_secret}")
+    public int selectTokenInfo(String client_open_id, String client_secret);
 
-    @Update("update master_user set username=#{username},password=#{password},display_name=#{display_name} where id=#{id}")
-    public void upateUser(User user);
-
-    @Delete("delete master_user where id=#{id}")
-    public void deleteUser(int id);
+    @Select("select ISNULL(max(id),0) from master_user where username=#{username} and password=#{password}")
+    public int selectId(String username, String password);
 }

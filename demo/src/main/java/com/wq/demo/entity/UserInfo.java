@@ -2,14 +2,14 @@ package com.wq.demo.entity;
 
 public class UserInfo {
     private int id;
-    private String username;
+    private String display_name;
 
-    @Override
-    public String toString() {
-        return "UserInfo{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                '}';
+    public UserInfo() {
+    }
+
+    public UserInfo(int id, String display_name) {
+        this.id = id;
+        this.display_name = display_name;
     }
 
     public int getId() {
@@ -20,11 +20,11 @@ public class UserInfo {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getDisplay_name() {
+        return display_name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setDisplay_name(String display_name) {
+        this.display_name = display_name;
     }
 }
